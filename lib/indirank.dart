@@ -6,6 +6,7 @@ class IndiRank extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Rankings'),
+        backgroundColor: Colors.amber,
       ),
       body: Container(
         width: 1000,
