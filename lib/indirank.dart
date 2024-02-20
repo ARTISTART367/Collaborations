@@ -1,33 +1,32 @@
 import 'package:flutter/material.dart';
 
-class IndiRank extends StatefulWidget {
-  const IndiRank({Key? key}) : super(key: key);
-
-  @override
-  _IndiRankState createState() => _IndiRankState();
-
-  class _IndiRankState extends State<IndiRank> {
+class IndiRank extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Rankings'),
+        title: Text('Rankings'),
       ),
-      body: Row(children: [
-        OutlinedButton(
-          child: const Text('Individual Rankigs'),
-          onPressed: () {
-            Navigator.pushNamed(context, 'indirank');
-          },
-        ),
-        OutlinedButton(
-          child: const Text('Locality Ranking'),
-          onPressed: () {
-            Navigator.pushNamed(context, 'localirank');
-          },
-        ),
-      ]),
+      body: Container(
+        width: 1000,
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          OutlinedButton(
+            child: Text('Individual Rankigs'),
+            onPressed: () {
+              Navigator.pushNamed(
+                  context,
+                  MaterialPageRoute(builder: (context) => IndiRank())
+                      as String);
+            },
+          ),
+          OutlinedButton(
+            child: Text('Locality Ranking'),
+            onPressed: () {
+              Navigator.pushNamed(context, 'localirank');
+            },
+          ),
+        ]),
+      ),
     );
   }
-}
 }
