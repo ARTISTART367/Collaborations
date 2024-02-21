@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyLogin extends StatefulWidget {
-  const MyLogin({Key? key}) : super(key: key);
+class MyRegister extends StatefulWidget {
+  const MyRegister({Key? key}) : super(key: key);
 
   @override
-  _MyLoginState createState() => _MyLoginState();
+  _MyRegisterState createState() => _MyRegisterState();
 }
 
-class _MyLoginState extends State<MyLogin> {
+class _MyRegisterState extends State<MyRegister> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +25,7 @@ class _MyLoginState extends State<MyLogin> {
             Container(
               padding: EdgeInsets.only(left: 120, top: 320),
               child: Text(
-                'Welcome',
+                'Join Us',
                 style: TextStyle(color: Color(0xFFEDDACF), fontSize: 33),
               ),
             ),
@@ -41,6 +41,38 @@ class _MyLoginState extends State<MyLogin> {
                       margin: EdgeInsets.only(left: 35, right: 35),
                       child: Column(
                         children: [
+                          Row(
+                            children: [
+                              Icon(
+                                // radius: 30,
+                                // backgroundColor: Color(0xff43766C),
+                                Icons.account_circle,
+                                color: Color(0xffD6DAC8),
+                                size: 65,
+
+                              ),
+                              SizedBox(width: 10),
+                              Expanded(
+                                child: TextField(
+                                  style: TextStyle(color: Colors.black),
+                                  decoration: InputDecoration(
+                                    fillColor: Colors.grey.shade100,
+                                    filled: true,
+                                    hintText: "Useranme",
+                                    isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
+                                    contentPadding: EdgeInsets.all(15),  //The padding for the input decoration's container.
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+
                           Row(
                             children: [
                               CircleAvatar(
@@ -80,11 +112,11 @@ class _MyLoginState extends State<MyLogin> {
                               CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
-                                  child: Icon(
-                                    Icons.lock,
-                                    color: Color(0xff231F20),
-                                    size: 40,
-                                  ),
+                                child: Icon(
+                                  Icons.lock,
+                                  color: Color(0xff231F20),
+                                  size: 40,
+                                ),
 
                               ),
                               SizedBox(width: 10),
@@ -106,16 +138,17 @@ class _MyLoginState extends State<MyLogin> {
                             ],
                           ),
                           SizedBox(
-                            height: 20,
+                            height:20,
                           ),
-
                           InkWell(
                             onTap: () {}, // Handle your callback
-                            child: Container(
+                            child:
+                            Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
                                 color: Color(0xff43766C),
                               ),
+                              padding: EdgeInsets.only(left: 20,right: 20),
                               child:Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
@@ -125,7 +158,7 @@ class _MyLoginState extends State<MyLogin> {
                                       // Add your onPressed logic here
                                     },
                                     child: Text(
-                                      'Sign in',
+                                      'Join Now',
                                       style: TextStyle(
                                         fontSize: 27,
                                         fontWeight: FontWeight.w700,
@@ -140,8 +173,10 @@ class _MyLoginState extends State<MyLogin> {
                                     child: IconButton(
                                       color: Colors.white,
 
-                                      onPressed: () {},
-                                      icon: Icon(
+                                      onPressed: () {
+                                          Navigator.pushNamed(context, 'home');
+                                      },
+                                      icon: const Icon(
                                         Icons.arrow_forward,
                                         size:30,
                                       ),
@@ -152,21 +187,21 @@ class _MyLoginState extends State<MyLogin> {
                             ),
                           ),
                           SizedBox(
-                            height: 40,
+                            height: 30,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.pushNamed(context, 'register');
+                                  Navigator.pushNamed(context, 'login');
                                 },
                                 child: Text(
-                                  'Sign Up',
+                                  'Sign In',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     decoration: TextDecoration.none,
-                                    color: Color(0xFFEDDACF),
+                                    color: Color(0xff43766C),
                                     fontSize: 18,
                                   ),
                                 ),
@@ -177,7 +212,7 @@ class _MyLoginState extends State<MyLogin> {
                                   'Forgot Password',
                                   style: TextStyle(
                                     decoration: TextDecoration.none,
-                                    color: Color(0xFFEDDACF),
+                                    color: Color(0xff43766C),
                                     fontSize: 18,
                                   ),
                                 ),
