@@ -11,7 +11,7 @@ class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/Register.png'),
           fit: BoxFit.cover,
@@ -24,7 +24,7 @@ class _MyLoginState extends State<MyLogin> {
             // Container(),
             Container(
               padding: EdgeInsets.only(left: 120, top: 320),
-              child: Text(
+              child: const Text(
                 'Welcome',
                 style: TextStyle(color: Color(0xFFEDDACF), fontSize: 33),
               ),
@@ -43,7 +43,7 @@ class _MyLoginState extends State<MyLogin> {
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                 child: Icon(
@@ -71,13 +71,13 @@ class _MyLoginState extends State<MyLogin> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
 
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                   child: Icon(
@@ -105,7 +105,7 @@ class _MyLoginState extends State<MyLogin> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
 
@@ -126,7 +126,7 @@ class _MyLoginState extends State<MyLogin> {
                                     onPressed: () {
                                       // Add your onPressed logic here
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       'Sign in',
                                       style: TextStyle(
                                         fontSize: 27,

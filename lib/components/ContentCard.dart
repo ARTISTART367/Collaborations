@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContentCard extends StatelessWidget {
+  const ContentCard({super.key});
+
   get kShadowColor => null;
 
   @override
@@ -8,11 +10,11 @@ class ContentCard extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Center(child:Container(
-      margin: EdgeInsets.only(),
+      margin: const EdgeInsets.only(),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
         color: Colors.blue,
-        boxShadow: [
+        boxShadow: const [
               BoxShadow(
                 offset: Offset(0, 17),
                 blurRadius: 17,
@@ -25,7 +27,7 @@ class ContentCard extends StatelessWidget {
             ),
           height: 250,
           width: 350,
-          child: Scaffold(
+          child: const Scaffold(
             backgroundColor: Colors.transparent,
 
           ),

@@ -9,28 +9,24 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
 
-    return Container(
-        child: Scaffold(
-        backgroundColor: const Color(0xff231F20),
-        body: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: Stack(
-        children: [
-          Container(
-            child:Column(
-              children:[
-                topProfile.User_top(),
-                Row(children: [
-                  Text('Ranking')
-                ],)
-            ],
-            ),
-          ),
-          bottomNav.Bottom_nav(),
-        ],
-        ),
-        ),
-        ),
+    return const Scaffold(
+    backgroundColor: Color(0xff231F20),
+    body: Scaffold(
+    backgroundColor: Colors.transparent,
+    body: Stack(
+    children: [
+      Column(
+        children:[
+          topProfile.User_top(),
+          Row(children: [
+            Text('Ranking')
+          ],)
+      ],
+      ),
+      bottomNav.Bottom_nav(),
+    ],
+    ),
+    ),
     );
   }
 }
