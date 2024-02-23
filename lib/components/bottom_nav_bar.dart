@@ -26,7 +26,7 @@ class _nav extends State<Bottom_nav> {
               switch(index){
                 case 0: Navigator.pushNamed(context, 'home');
                 break;
-                case 1: Navigator.pushNamed(context, 'home');
+                case 1: Navigator.pushNamed(context, 'profile');
                 break;
                 case 2: Navigator.pushNamed(context, 'home');
                 break;
@@ -63,7 +63,7 @@ class _nav extends State<Bottom_nav> {
                 icon: Icon(Icons.star_purple500_outlined,size:40,), label: 'Ranking'),
           ],
         ),
-        body: const Center(child: Text('Home')),
+        body: const Center(child: Text('')),
       ),
     );
   }

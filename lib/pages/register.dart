@@ -43,7 +43,7 @@ class _MyRegisterState extends State<MyRegister> {
                         children: [
                           Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 // radius: 30,
                                 // backgroundColor: Color(0xff43766C),
                                 Icons.account_circle,
@@ -75,7 +75,7 @@ class _MyRegisterState extends State<MyRegister> {
 
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                 child: Icon(
@@ -109,7 +109,7 @@ class _MyRegisterState extends State<MyRegister> {
 
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                 child: Icon(
@@ -141,7 +141,7 @@ class _MyRegisterState extends State<MyRegister> {
                             height:20,
                           ),
                           InkWell(
-                            onTap: () {}, // Handle your callback
+                            onTap: () {  Navigator.pushNamed(context, 'home');}, // Handle your callback
                             child:
                             Container(
                               decoration: BoxDecoration(
@@ -196,7 +196,7 @@ class _MyRegisterState extends State<MyRegister> {
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'login');
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Sign In',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
