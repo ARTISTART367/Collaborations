@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdsc_sol_challenge_00/pages/collaborations.dart';
 import 'package:gdsc_sol_challenge_00/pages/profile.dart';
 import 'pages/login.dart';
 import 'pages/register.dart';
@@ -15,6 +16,7 @@ void main() {
       'home': (context) => const HomeScreen(),
       'ranking': (context) => const MyRank(),
       'profile': (context) => const Profile(),
+      'collab': (context) => const Collab(),
     },
   ));
 }
