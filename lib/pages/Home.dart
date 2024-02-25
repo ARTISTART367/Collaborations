@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../components/bottom_nav_bar.dart' as bottomNav;
 import '../widgets/search_bar.dart' as search;
@@ -7,6 +6,8 @@ import '../components/ContentCard.dart' as cc;
 import 'NavBar.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -15,11 +16,11 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: const Color(0xff231F20),
         body: Scaffold(
-          drawer: Navbar(),
+          drawer: const Navbar(),
           backgroundColor: Colors.transparent,
           body: Stack(
             children: [
-              topProfile.User_top(),
+              const topProfile.User_top(),
               Container(
                 child: const Column(
                   children: [
@@ -33,9 +34,9 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              cc.ContentCard(),
+              const cc.ContentCard(),
               Container(
-                margin: EdgeInsets.only(left: 60, top: 235),
+                margin: const EdgeInsets.only(left: 60, top: 235),
                 child: const Text(
                   'Latest Collaborations',
                   style: TextStyle(
@@ -45,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 60, top: 525),
+                margin: const EdgeInsets.only(left: 60, top: 525),
                 child: const Text(
                   'Ideation Blogs',
                   style: TextStyle(
@@ -55,10 +56,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 560),
-                child: cc.ContentCard(),
+                margin: const EdgeInsets.only(top: 560),
+                child: const cc.ContentCard(),
               ),
-              bottomNav.Bottom_nav(),
+              const bottomNav.Bottom_nav(),
             ],
           ),
         ),

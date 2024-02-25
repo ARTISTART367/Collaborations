@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyLogin extends StatefulWidget {
-  const MyLogin({Key? key}) : super(key: key);
+  const MyLogin({super.key});
 
   @override
   _MyLoginState createState() => _MyLoginState();
@@ -23,7 +23,7 @@ class _MyLoginState extends State<MyLogin> {
           children: [
             // Container(),
             Container(
-              padding: EdgeInsets.only(left: 120, top: 320),
+              padding: const EdgeInsets.only(left: 120, top: 320),
               child: const Text(
                 'Welcome',
                 style: TextStyle(color: Color(0xFFEDDACF), fontSize: 33),
@@ -38,7 +38,7 @@ class _MyLoginState extends State<MyLogin> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(left: 35, right: 35),
+                      margin: const EdgeInsets.only(left: 35, right: 35),
                       child: Column(
                         children: [
                           Row(
@@ -52,17 +52,17 @@ class _MyLoginState extends State<MyLogin> {
                                   size: 40,
                                 ),
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Expanded(
                                 child: TextField(
-                                  style: TextStyle(color: Colors.black),
+                                  style: const TextStyle(color: Colors.black),
                                   decoration: InputDecoration(
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Email",
                                     isDense:
                                         true, //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(
+                                    contentPadding: const EdgeInsets.all(
                                         15), //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
@@ -86,17 +86,17 @@ class _MyLoginState extends State<MyLogin> {
                                   size: 40,
                                 ),
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Expanded(
                                 child: TextField(
-                                  style: TextStyle(color: Colors.black),
+                                  style: const TextStyle(color: Colors.black),
                                   decoration: InputDecoration(
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Password",
                                     isDense:
                                         true, //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(
+                                    contentPadding: const EdgeInsets.all(
                                         15), //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
@@ -116,7 +116,7 @@ class _MyLoginState extends State<MyLogin> {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Color(0xff43766C),
+                                color: const Color(0xff43766C),
                               ),
                               child: Row(
                                 mainAxisAlignment:
@@ -137,11 +137,11 @@ class _MyLoginState extends State<MyLogin> {
                                   ),
                                   CircleAvatar(
                                     radius: 30,
-                                    backgroundColor: Color(0xff43766C),
+                                    backgroundColor: const Color(0xff43766C),
                                     child: IconButton(
                                       color: Colors.white,
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.arrow_forward,
                                         size: 30,
                                       ),
@@ -151,7 +151,7 @@ class _MyLoginState extends State<MyLogin> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
                           Row(
@@ -161,7 +161,7 @@ class _MyLoginState extends State<MyLogin> {
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'register');
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Sign Up',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
@@ -173,7 +173,7 @@ class _MyLoginState extends State<MyLogin> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   'Forgot Password',
                                   style: TextStyle(
                                     decoration: TextDecoration.none,

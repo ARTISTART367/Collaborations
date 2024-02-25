@@ -4,18 +4,17 @@ import 'pages/login.dart';
 import 'pages/register.dart';
 import 'pages/Home.dart';
 import 'pages/Ranking.dart';
-import 'pages/profile.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: MyLogin(),
+    home: const MyLogin(),
     routes: {
-      'register': (context) => MyRegister(),
-      'login': (context) => MyLogin(),
-      'home': (context) => HomeScreen(),
-      'ranking': (context) => MyRank(),
-      'profile': (context) => Profile(),
+      'register': (context) => const MyRegister(),
+      'login': (context) => const MyLogin(),
+      'home': (context) => const HomeScreen(),
+      'ranking': (context) => const MyRank(),
+      'profile': (context) => const Profile(),
     },
   ));
 }

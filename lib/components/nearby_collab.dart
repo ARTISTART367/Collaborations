@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class nearCollabs extends StatelessWidget {
+  const nearCollabs({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Retrieve screen width
@@ -17,7 +18,7 @@ class nearCollabs extends StatelessWidget {
       Align(
         alignment: Alignment.topCenter,
         child: Container(
-          margin: EdgeInsets.only(),
+          margin: const EdgeInsets.only(),
           height: 100,
           color: Colors.transparent,
           child: GridView.count(
@@ -29,7 +30,7 @@ class nearCollabs extends StatelessWidget {
               return Center(
                   child: Text(
                     'Item $index',
-                    style:TextStyle(color: Colors.cyan),
+                    style:const TextStyle(color: Colors.cyan),
 
                   )
               );
