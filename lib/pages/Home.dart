@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/bottom_nav_bar.dart' as bottomNav;
 import '../widgets/search_bar.dart' as search;
-import '../components/user_top.dart' as topProfile;
 import '../components/ContentCard.dart' as cc;
 import 'appdrawer.dart'; // Import your AppDrawer here
 

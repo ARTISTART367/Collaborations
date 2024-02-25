@@ -13,15 +13,16 @@ class IndiRank extends StatelessWidget {
       'Jess',
       'Tushar',
       'Neha',
+      'David',
       'Kaustubh',
       'Praneet',
       'Soham',
-      'Lenoy'
+      'Lenoy',
     ];
     return Scaffold(
       appBar: AppBar(
         title: const Text('Rankings'),
-        backgroundColor: Colors.amber,
+        backgroundColor: const Color(0xff43766C),
         centerTitle: true,
       ),
       body: SizedBox(
