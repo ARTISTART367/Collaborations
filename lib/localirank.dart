@@ -18,7 +18,7 @@ class LocaliRank extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(
                   context,
-                  MaterialPageRoute(builder: (context) => IndiRank())
+                  MaterialPageRoute(builder: (context) => const IndiRank())
                       as String);
             },
           ),

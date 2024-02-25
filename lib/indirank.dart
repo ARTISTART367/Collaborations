@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class IndiRank extends StatelessWidget {
-  const IndiRank({Key? key}) : super(key: key);
+  const IndiRank({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,13 +42,13 @@ class IndiRank extends StatelessWidget {
                   return ListTile(
                     leading: Text('$index'),
                     title: Text(arrNames[index]),
-                    subtitle: Text('Number'),
-                    trailing: Icon(Icons.numbers),
+                    subtitle: const Text('Number'),
+                    trailing: const Icon(Icons.numbers_rounded),
                   );
                 },
                 itemCount: arrNames.length,
                 separatorBuilder: (context, index) {
-                  return Divider(
+                  return const Divider(
                     height: 10, // Reduced height for the divider
                     thickness: 1,
                   );
