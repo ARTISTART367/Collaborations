@@ -1,7 +1,5 @@
 // Import necessary packages and components
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../components/user_top.dart' as topProfile;
 import '../components/bottom_nav_bar.dart' as bottomNav;
 import '../widgets/search_bar.dart' as search;
@@ -9,6 +7,8 @@ import '../components/nearby_collab.dart' as collabs;
 
 // Define Profile widget
 class Profile extends StatelessWidget {
+  const Profile({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Retrieve screen width
@@ -16,24 +16,24 @@ class Profile extends StatelessWidget {
 
     // Build UI
     return Scaffold(
-      backgroundColor: Color(0xff231F20),
+      backgroundColor: const Color(0xff231F20),
       body: Stack(
         children: [
           // Top profile section
-          Container(
+          const SizedBox(
             height: 230,
             child: topProfile.User_top(),
           ),
 
           // Points display
           Container(
-            child: Padding(
+            child: const Padding(
               padding: EdgeInsets.only(top: 160, left: 85),
               child: Text(
                 'Points:   4000',
                 style: TextStyle(
                   fontSize: 20,
-                  backgroundColor: Color(0xE0F1C4),
+                  backgroundColor: Color(0x00e0f1c4),
                   color: Colors.teal,
                 ),
               ),
@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
 
           // Search bar
           Container(
-            child: Column(
+            child: const Column(
               children: [
                 Padding(
                   padding: EdgeInsets.only(top: 180),
@@ -58,7 +58,7 @@ class Profile extends StatelessWidget {
           Align(
             alignment: Alignment.topCenter,
             child: Container(
-              margin: EdgeInsets.only(top: 280),
+              margin: const EdgeInsets.only(top: 280),
               height: 400,
               color: Colors.transparent,
               child: GridView.count(
@@ -72,7 +72,7 @@ class Profile extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, 'register');
                         },
-                        icon:ImageIcon(
+                        icon:const ImageIcon(
                           AssetImage('assets/atomic.png'),
                           size: 500,
                           color: Colors.white,
@@ -84,7 +84,7 @@ class Profile extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, 'register');
                         },
-                        icon:ImageIcon(
+                        icon:const ImageIcon(
                           AssetImage('assets/art-palette.png'),
                           size: 500,
                           color: Colors.white,
@@ -96,7 +96,7 @@ class Profile extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, 'register');
                         },
-                        icon:ImageIcon(
+                        icon:const ImageIcon(
                           AssetImage('assets/coins.png'),
                           size: 500,
                           color: Colors.white,
@@ -108,7 +108,7 @@ class Profile extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, 'register');
                         },
-                        icon:ImageIcon(
+                        icon:const ImageIcon(
                           AssetImage('assets/graduation.png'),
                           size: 500,
                           color: Colors.white,
@@ -120,7 +120,7 @@ class Profile extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, 'register');
                           },
-                        icon:ImageIcon(
+                        icon:const ImageIcon(
                         AssetImage('assets/globe (1).png'),
                         size: 500,
                         color: Colors.white,
@@ -135,14 +135,14 @@ class Profile extends StatelessWidget {
                     print('tapped');
                   },
                   child:  Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                   child:ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),//or 15.0
                     child: Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       height: 70.0,
                       width: 70.0,
-                      color:Color(0xff43766C),
+                      color:const Color(0xff43766C),
                       child: A
                     ),
                     ),
@@ -155,8 +155,8 @@ class Profile extends StatelessWidget {
           ),
 
           // Bottom navigation bar
-        collabs.nearCollabs(),
-        bottomNav.Bottom_nav(pageindex: 1),
+        const collabs.nearCollabs(),
+        const bottomNav.Bottom_nav(pageindex: 1),
         ],
       ),
     );

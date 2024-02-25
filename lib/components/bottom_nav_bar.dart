@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Bottom_nav extends StatefulWidget {
-  const Bottom_nav({Key? key, required this.pageindex}) : super(key: key);
+  const Bottom_nav({super.key, required this.pageindex});
 
   final int pageindex;
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class User_top extends StatefulWidget {
-  const User_top({Key? key}) : super(key: key);
+  const User_top({super.key});
 
   @override
   _top createState() =>  _top();
@@ -20,23 +20,23 @@ class _top extends State<User_top> {
       ,
       width: 500,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Row(
           children: [
             CircleAvatar(
               radius: 30,
-              backgroundColor: Color(0xffD6DAC8),
+              backgroundColor: const Color(0xffD6DAC8),
               child: IconButton(
-                color: Color(0xff231F20),
+                color: const Color(0xff231F20),
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
                   size: 55,
                 ),
               ),
             ),
-            SizedBox(width: 20),
-            CircleAvatar(
+            const SizedBox(width: 20),
+            const CircleAvatar(
               radius: 30,
               backgroundColor: Color(0xff231F20),
             ),
