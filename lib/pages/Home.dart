@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                   margin:  EdgeInsets.only(top:560),
                   child:cc.ContentCard(),),
 
-                bottomNav.Bottom_nav(),
+                bottomNav.Bottom_nav(pageindex: 0),
 
             ],
           ),

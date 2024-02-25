@@ -156,7 +156,7 @@ class Profile extends StatelessWidget {
 
           // Bottom navigation bar
         collabs.nearCollabs(),
-        bottomNav.Bottom_nav(),
+        bottomNav.Bottom_nav(pageindex: 1),
         ],
       ),
     );

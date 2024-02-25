@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 
 class Bottom_nav extends StatefulWidget {
-  const Bottom_nav({Key? key}) : super(key: key);
+  const Bottom_nav({Key? key, required this.pageindex}) : super(key: key);
+
+  final int pageindex;
 
   @override
   _nav createState() =>  _nav();
 }
 
 class _nav extends State<Bottom_nav> {
-  int currentPageIndex = 0;
+  late int currentPageIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    currentPageIndex = widget.pageindex;
+  }
 
   @override
   Widget build(BuildContext context) {
