@@ -34,7 +34,6 @@ class _nav extends State<Bottom_nav> {
                 break;
                 case 4: Navigator.pushNamed(context, 'ranking');
                 break;
-
               }
               // pageRoute = label;
             });
@@ -49,9 +48,12 @@ class _nav extends State<Bottom_nav> {
             NavigationDestination(
               icon: Icon(Icons.account_circle,size:35,),
               label: 'profile',
+              selectedIcon: Icon(Icons.account_circle_outlined,size:35,),
             ),
             NavigationDestination(
-                icon: Icon(Icons.handshake,size:35,), label: 'collaboration'),
+                icon: Icon(Icons.handshake,size:35,),
+                label: 'collaboration',
+            ),
             NavigationDestination(
               icon: Icon(Icons.mail_outline,
               size:35,),
