@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'appdrawer.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(const Myapp());
 }
 
 class Myapp extends StatefulWidget {
+  const Myapp({super.key});
+
   @override
   State<Myapp> createState() => Myappone();
 }
@@ -16,7 +18,7 @@ class Myappone extends State<Myapp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: AppDrawer(),
+        drawer: const AppDrawer(),
         appBar: AppBar(
           title: const Text('Drawer for collaboratios'),
           backgroundColor: Colors.green,
