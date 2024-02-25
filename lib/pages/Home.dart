@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: const Color(0xff231F20),
         appBar: AppBar(
           title: const Text('Hello David'),
+          backgroundColor: const Color(0xff43766C),
           // Add the AppDrawer here
         ),
         body: Stack(
