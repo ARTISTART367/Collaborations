@@ -12,9 +12,9 @@ void main() {
     routes: {
       'register': (context) => const MyRegister(),
       'login': (context) => const MyLogin(),
-      'home':(context)=> const HomeScreen(),
-      'ranking':(context)=>const MyRank(),
-      'profile':(context)=>const Profile(),
+      'home': (context) => const HomeScreen(),
+      'ranking': (context) => const MyRank(),
+      'profile': (context) => const Profile(),
     },
   ));
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../components/inter_rank.dart';
+import 'package:gdsc_sol_challenge_00/components/inter_rank.dart';
+// import 'package:gdsc_sol_challenge_00/IndiRank.dart';
 
 class LocaliRank extends StatelessWidget {
   const LocaliRank({super.key});
@@ -19,7 +20,7 @@ class LocaliRank extends StatelessWidget {
               Navigator.pushNamed(
                   context,
                   MaterialPageRoute(builder: (context) => const IndiRank())
-                  as String);
+                      as String);
             },
           ),
           OutlinedButton(

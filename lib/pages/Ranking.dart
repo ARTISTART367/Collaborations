@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../components/local_rank.dart' as localRank;
+import 'package:gdsc_sol_challenge_00/components/inter_rank.dart' as indirank;
+// import '../components/local_rank.dart' as localRank;
 
 class MyRank extends StatelessWidget {
   const MyRank({super.key});
@@ -14,7 +15,7 @@ class MyRank extends StatelessWidget {
           backgroundColor: Colors.transparent,
           body: Stack(
             children: [
-             localRank.LocaliRank(),
+              indirank.IndiRank(),
             ],
           ),
         ),
