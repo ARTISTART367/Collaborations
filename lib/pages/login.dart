@@ -51,7 +51,6 @@ class _MyLoginState extends State<MyLogin> {
                                   color: Color(0xff231F20),
                                   size: 40,
                                 ),
-
                               ),
                               SizedBox(width: 10),
                               Expanded(
@@ -61,8 +60,10 @@ class _MyLoginState extends State<MyLogin> {
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Email",
-                                    isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(15),  //The padding for the input decoration's container.
+                                    isDense:
+                                        true, //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
+                                    contentPadding: EdgeInsets.all(
+                                        15), //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
@@ -74,18 +75,16 @@ class _MyLoginState extends State<MyLogin> {
                           const SizedBox(
                             height: 20,
                           ),
-
                           Row(
                             children: [
                               const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
-                                  child: Icon(
-                                    Icons.lock,
-                                    color: Color(0xff231F20),
-                                    size: 40,
-                                  ),
-
+                                child: Icon(
+                                  Icons.lock,
+                                  color: Color(0xff231F20),
+                                  size: 40,
+                                ),
                               ),
                               SizedBox(width: 10),
                               Expanded(
@@ -95,8 +94,10 @@ class _MyLoginState extends State<MyLogin> {
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Password",
-                                    isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(15), //The padding for the input decoration's container.
+                                    isDense:
+                                        true, //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
+                                    contentPadding: EdgeInsets.all(
+                                        15), //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
@@ -108,7 +109,6 @@ class _MyLoginState extends State<MyLogin> {
                           const SizedBox(
                             height: 20,
                           ),
-
                           InkWell(
                             onTap: () {
                               Navigator.pushNamed(context, 'home');
@@ -118,11 +118,11 @@ class _MyLoginState extends State<MyLogin> {
                                 borderRadius: BorderRadius.circular(50),
                                 color: Color(0xff43766C),
                               ),
-                              child:Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   TextButton(
-
                                     onPressed: () {
                                       // Add your onPressed logic here
                                     },
@@ -135,7 +135,6 @@ class _MyLoginState extends State<MyLogin> {
                                       ),
                                     ),
                                   ),
-
                                   CircleAvatar(
                                     radius: 30,
                                     backgroundColor: Color(0xff43766C),
@@ -144,7 +143,7 @@ class _MyLoginState extends State<MyLogin> {
                                       onPressed: () {},
                                       icon: Icon(
                                         Icons.arrow_forward,
-                                        size:30,
+                                        size: 30,
                                       ),
                                     ),
                                   ),

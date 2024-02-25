@@ -13,9 +13,9 @@ void main() {
     routes: {
       'register': (context) => MyRegister(),
       'login': (context) => MyLogin(),
-      'home':(context)=> HomeScreen(),
-      'ranking':(context)=>MyRank(),
-      'profile':(context)=>Profile(),
+      'home': (context) => HomeScreen(),
+      'ranking': (context) => MyRank(),
+      'profile': (context) => Profile(),
     },
   ));
 }
