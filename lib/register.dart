@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyRegister extends StatefulWidget {
-  const MyRegister({Key? key}) : super(key: key);
+  const MyRegister({super.key});
 
   @override
   _MyRegisterState createState() => _MyRegisterState();
@@ -11,7 +11,7 @@ class _MyRegisterState extends State<MyRegister> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/Register.png'),
           fit: BoxFit.cover,
@@ -23,8 +23,8 @@ class _MyRegisterState extends State<MyRegister> {
           children: [
             Container(),
             Container(
-              padding: EdgeInsets.only(left: 120, top: 320),
-              child: Text(
+              padding: const EdgeInsets.only(left: 120, top: 320),
+              child: const Text(
                 'Join Us',
                 style: TextStyle(color: Color(0xFFEDDACF), fontSize: 33),
               ),
@@ -38,12 +38,12 @@ class _MyRegisterState extends State<MyRegister> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(left: 35, right: 35),
+                      margin: const EdgeInsets.only(left: 35, right: 35),
                       child: Column(
                         children: [
                           Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 // radius: 30,
                                 // backgroundColor: Color(0xff43766C),
                                 Icons.account_circle,
@@ -51,16 +51,16 @@ class _MyRegisterState extends State<MyRegister> {
                                 size: 65,
 
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Expanded(
                                 child: TextField(
-                                  style: TextStyle(color: Colors.black),
+                                  style: const TextStyle(color: Colors.black),
                                   decoration: InputDecoration(
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Useranme",
                                     isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(15),  //The padding for the input decoration's container.
+                                    contentPadding: const EdgeInsets.all(15),  //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
@@ -69,13 +69,13 @@ class _MyRegisterState extends State<MyRegister> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
 
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                 child: Icon(
@@ -85,16 +85,16 @@ class _MyRegisterState extends State<MyRegister> {
                                 ),
 
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Expanded(
                                 child: TextField(
-                                  style: TextStyle(color: Colors.black),
+                                  style: const TextStyle(color: Colors.black),
                                   decoration: InputDecoration(
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Email",
                                     isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(15),  //The padding for the input decoration's container.
+                                    contentPadding: const EdgeInsets.all(15),  //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
@@ -103,13 +103,13 @@ class _MyRegisterState extends State<MyRegister> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
 
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Color(0xffD6DAC8),
                                 child: Icon(
@@ -119,16 +119,16 @@ class _MyRegisterState extends State<MyRegister> {
                                 ),
 
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Expanded(
                                 child: TextField(
-                                  style: TextStyle(color: Colors.black),
+                                  style: const TextStyle(color: Colors.black),
                                   decoration: InputDecoration(
                                     fillColor: Colors.grey.shade100,
                                     filled: true,
                                     hintText: "Password",
                                     isDense:true,  //Whether the InputDecorator.child is part of a dense form (i.e., uses less vertical space).
-                                    contentPadding: EdgeInsets.all(15), //The padding for the input decoration's container.
+                                    contentPadding: const EdgeInsets.all(15), //The padding for the input decoration's container.
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
@@ -137,7 +137,7 @@ class _MyRegisterState extends State<MyRegister> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height:20,
                           ),
                           InkWell(
@@ -146,9 +146,9 @@ class _MyRegisterState extends State<MyRegister> {
                             Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Color(0xff43766C),
+                                color: const Color(0xff43766C),
                               ),
-                              padding: EdgeInsets.only(left: 20,right: 20),
+                              padding: const EdgeInsets.only(left: 20,right: 20),
                               child:Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
@@ -157,7 +157,7 @@ class _MyRegisterState extends State<MyRegister> {
                                     onPressed: () {
                                       // Add your onPressed logic here
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       'Join Now',
                                       style: TextStyle(
                                         fontSize: 27,
@@ -169,12 +169,12 @@ class _MyRegisterState extends State<MyRegister> {
 
                                   CircleAvatar(
                                     radius: 30,
-                                    backgroundColor: Color(0xff43766C),
+                                    backgroundColor: const Color(0xff43766C),
                                     child: IconButton(
                                       color: Colors.white,
 
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.arrow_forward,
                                         size:30,
                                       ),
@@ -184,7 +184,7 @@ class _MyRegisterState extends State<MyRegister> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
                           Row(
@@ -194,7 +194,7 @@ class _MyRegisterState extends State<MyRegister> {
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'login');
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Sign In',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
@@ -206,7 +206,7 @@ class _MyRegisterState extends State<MyRegister> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   'Forgot Password',
                                   style: TextStyle(
                                     decoration: TextDecoration.none,

@@ -7,12 +7,12 @@ import 'indirank.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: IndiRank(),
+    home: const IndiRank(),
     routes: {
-      'register': (context) => MyRegister(),
-      'login': (context) => MyLogin(),
-      'IndiRank': (context) => IndiRank(),
-      'LocaliRank': (context) => LocaliRank(),
+      'register': (context) => const MyRegister(),
+      'login': (context) => const MyLogin(),
+      'IndiRank': (context) => const IndiRank(),
+      'LocaliRank': (context) => const LocaliRank(),
     },
   ));
 }
