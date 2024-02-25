@@ -6,7 +6,6 @@ class MyRank extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
     return Container(
       child: const Scaffold(
         backgroundColor: Color(0xff231F20),
@@ -14,7 +13,7 @@ class MyRank extends StatelessWidget {
           backgroundColor: Colors.transparent,
           body: Stack(
             children: [
-             localRank.LocaliRank(),
+              localRank.LocaliRank(),
             ],
           ),
         ),

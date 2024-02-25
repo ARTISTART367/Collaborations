@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../components/bottom_nav_bar.dart' as bottomNav;
 import '../widgets/search_bar.dart' as search;
@@ -6,21 +7,17 @@ import '../components/ContentCard.dart' as cc;
 import 'NavBar.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
     return Container(
       child: Scaffold(
         backgroundColor: const Color(0xff231F20),
         body: Scaffold(
-          drawer: const Navbar(),
+          drawer: Navbar(),
           backgroundColor: Colors.transparent,
           body: Stack(
             children: [
-              const topProfile.User_top(),
+              topProfile.User_top(),
               Container(
                 child: const Column(
                   children: [
@@ -34,9 +31,9 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const cc.ContentCard(),
+              cc.ContentCard(),
               Container(
-                margin: const EdgeInsets.only(left: 60, top: 235),
+                margin: EdgeInsets.only(left: 60, top: 235),
                 child: const Text(
                   'Latest Collaborations',
                   style: TextStyle(
@@ -46,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 60, top: 525),
+                margin: EdgeInsets.only(left: 60, top: 525),
                 child: const Text(
                   'Ideation Blogs',
                   style: TextStyle(
@@ -56,10 +53,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 560),
-                child: const cc.ContentCard(),
+                margin: EdgeInsets.only(top: 560),
+                child: cc.ContentCard(),
               ),
-              const bottomNav.Bottom_nav(),
+              bottomNav.Bottom_nav(),
             ],
           ),
         ),
