@@ -1,6 +1,6 @@
 // Import necessary packages and components
 import 'package:flutter/material.dart';
-import '../components/user_top.dart' as topProfile;
+// import '../components/user_top.dart' as topProfile;
 import '../components/bottom_nav_bar.dart' as bottomNav;
 import '../widgets/search_bar.dart' as search;
 import '../components/nearby_collab.dart' as collabs;

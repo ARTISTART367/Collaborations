@@ -6,16 +6,12 @@ class nearCollabs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Retrieve screen width
-    double screenWidth = MediaQuery
-        .of(context)
-        .size
-        .width;
+    double screenWidth = MediaQuery.of(context).size.width;
 
     // Build UI
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body:
-      Align(
+      body: Align(
         alignment: Alignment.topCenter,
         child: Container(
           margin: const EdgeInsets.only(),
@@ -29,14 +25,13 @@ class nearCollabs extends StatelessWidget {
             children: List.generate(100, (index) {
               return Center(
                   child: Text(
-                    'Item $index',
-                    style:const TextStyle(color: Colors.cyan),
-
-                  )
-              );
+                'Item $index',
+                style: const TextStyle(color: Colors.cyan),
+              ));
             }),
           ),
         ),
       ),
     );
-  }}
+  }
+}
